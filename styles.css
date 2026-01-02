@@ -538,10 +538,23 @@ img {
     justify-content: center;
     opacity: 0;
     transition: opacity var(--transition-default);
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 10;
 }
 
 .product-card:hover .product-overlay {
     opacity: 1;
+}
+
+.product-title-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.product-title-link:hover {
+    color: var(--color-primary);
 }
 
 .product-info {
